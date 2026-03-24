@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pixel Academy</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- AUDIO -->
+  <audio id="hoverSound" src="assets/hover.mp3"></audio>
+  <audio id="clickSound" src="assets/click.mp3"></audio>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <span onclick="playClick()">HOME</span>
+      <span onclick="playClick()">COURSES</span>
+      <span onclick="playClick()">ABOUT</span>
+    </div>
+
+    <div class="nav-right">
+      <button onclick="playClick()">LOGIN</button>
+    </div>
+  </nav>
+
+  <!-- TITLE -->
+  <h1 class="title">PIXEL ACADEMY</h1>
+
+  <!-- PARTICLES -->
+  <div class="particles"></div>
+
+  <!-- FRAME -->
+  <div class="frame">
+
+    <div class="courses">
+
+      <div class="card" onclick="openCourse('Science')">
+        <img src="assets/science.png">
+        <p>GENERAL<br>SCIENCE</p>
+      </div>
+
+      <div class="card" onclick="openCourse('Math')">
+        <img src="assets/math.png">
+        <p>GENERAL<br>MATHEMATICS</p>
+      </div>
+
+      <div class="card" onclick="openCourse('Communication')">
+        <img src="assets/communication.png">
+        <p>EFFECTIVE<br>COMMUNICATION</p>
+      </div>
+
+      <div class="card bottom" onclick="openCourse('Personal Dev')">
+        <img src="assets/personal.png">
+        <p>PERSONAL<br>DEVELOPMENT</p>
+      </div>
+
+      <div class="card bottom" onclick="openCourse('PE')">
+        <img src="assets/pe.png">
+        <p>PHYSICAL<br>EDUCATION</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    © 2077 PIXEL ACADEMY — LEARN WITH EVERY BIT
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+
+

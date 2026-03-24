@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  background: url("assets/bg.png");
+  background-size: cover;
+  background-color: #2b1d3a;
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #2a1a3f;
+  border-bottom: 4px solid #a78bfa;
+}
+
+.nav-left span {
+  margin-right: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-left span:hover {
+  color: #ffd700;
+}
+
+/* BUTTON */
+.nav-right button {
+  background: #6d28d9;
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-right button:hover {
+  background: #8b5cf6;
+  transform: scale(1.1);
+}
+
+/* TITLE ANIMATION */
+.title {
+  margin-top: 30px;
+  font-size: 22px;
+  color: #ffd700;
+  text-shadow: 0 0 10px #ffd700;
+  animation: float 2s infinite alternate;
+}
+
+@keyframes float {
+  from { transform: translateY(0); }
+  to { transform: translateY(10px); }
+}
+
+/* FRAME */
+.frame {
+  width: 80%;
+  margin: 40px auto;
+  padding: 40px;
+  background: rgba(30, 20, 50, 0.95);
+  border: 5px solid #a78bfa;
+  border-radius: 15px;
+  box-shadow: 0 0 20px black;
+}
+
+/* GRID */
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
+}
+
+/* CARDS */
+.card {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card img {
+  width: 110px;
+  image-rendering: pixelated;
+}
+
+.card p {
+  font-size: 10px;
+  color: #facc15;
+}
+
+.card:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 10px #a78bfa);
+}
+
+/* CENTER BOTTOM */
+.bottom:nth-child(4) { grid-column: 1 / 2; }
+.bottom:nth-child(5) { grid-column: 3 / 4; }
+
+/* PARTICLES */
+.particles::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(white 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 0.2;
+  animation: moveBg 20s linear infinite;
+}
+
+@keyframes moveBg {
+  from { background-position: 0 0; }
+  to { background-position: 100px 100px; }
+}
+
+/* FOOTER */
+footer {
+  margin-top: 30px;
+  padding: 20px;
+  font-size: 10px;
+}
